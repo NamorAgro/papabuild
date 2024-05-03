@@ -1,0 +1,262 @@
+
+
+
+
+
+
+.head-block{
+    padding: 5px 30px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* ensures the header is above other content */
+    background-color: #FFF; /* or any color/background you want */
+    transition: 0.3s; /* Smooth transition */
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.head-block.smaller {
+    padding: 0px 20px;
+    height: 60px; /* Smaller height */
+}
+
+.header__log img{
+    height: 70px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.smaller .header__log img{
+    height: 40px;
+    width: auto;
+}
+.center-text{
+    margin: 6vh calc(var(--index)*16);
+    text-align: center;
+}
+.header__logo img, .header__list .social-icon {
+    transition: transform 0.3s; /* Smooth transition for logos and icons */
+}
+
+header.smaller .header__logo img, header.smaller .header__list .social-icon {
+    transform: scale(0.8); /* Adjust scale to make logos/icons smaller */
+}
+.social-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-images{
+    display: block;
+}
+
+
+
+
+
+
+
+h2{
+    font-size: calc(var(--index)*1.2);
+    text-align: left;
+    margin-bottom: 2vh;
+}
+
+.two-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    padding: 3vh 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: center;
+    gap: 3vw;
+}
+.on-of-side{
+    padding: 1vh 2vw;
+}
+ol,ul{
+    margin: 0 auto;
+}
+.right-side{
+    border: 1px solid lightgray;
+}
+li {
+    font-size: calc(var(--index)*0.8);
+    font-weight: 400;
+    counter-increment: custom-counter; 
+    position: relative; 
+    text-align: left;
+    margin: 0 0 1vh;
+}
+.second-section{
+    background-color: rgb(253, 244, 230);
+}
+span.price{
+    font-size: calc(var(--index)*1.4);
+    font-weight: 900;
+}
+
+/* -----
+------------------------------ FOOTER
+------------------------------------------------------*/
+footer{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    background-color: black;
+    padding: 5vh 20px;
+}
+.footer-logo img{
+    height: 7vh;
+    width: auto;
+}
+.footer-social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon{
+    height: 5vh;
+    width: auto;
+}
+.footel-social-list li{
+    list-style-type: none;
+}
+.pages li{
+    list-style-type: none;
+}
+.pages a{
+    font-size: calc(var(--index)*0.8);
+    color: white;
+}
+
+/* -----
+------------------------------ Images ROW
+------------------------------------------------------*/
+
+.images-in-row{
+    width: 100%;
+    grid-template-columns: repeat(4, 24.9%);
+    display: grid;
+}
+.images-in-row image{
+    width: 10%;
+}
+/* -----
+------------------------------ For BLOG STEPS 
+------------------------------------------------------*/
+
+.section-background{
+    background-color: rgb(255, 242, 226);
+}
+
+.blog-step-header{
+    margin: 6vh calc(var(--index)*8);
+    text-align: center;
+}
+
+h3{
+    font-size: calc(var(--index)*1.2);
+    margin-bottom: 2vh;
+}
+
+.number{
+    display: inline-block;
+    padding: calc(var(--index)*0.3) calc(var(--index)*1.3);
+    font-size: calc(var(--index)*3.2);
+    border: 2px solid greenyellow;
+}
+
+.double-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 3vw;
+}
+
+.full-width{
+    width: 100%;
+    height: auto;
+}
+
+
+
+h4{
+    font-size: calc(var(--index)*0.8);
+    margin-bottom: 2vh;
+}
+
+span.stronger{
+    font-weight: 600;
+}
+
+.video{
+    margin: 0 auto;
+    width: calc(var(--index)*30);
+    height: calc(var(--index)*10);
+}
+
+@media screen and (max-width: 1480px){
+    .blog-step-header{
+        margin: 6vh calc(var(--index)*6);
+    }
+    .double-side-section{
+        margin: 6vh calc(var(--index)*6);
+    }
+    
+    .social-icon{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .two-side-section{
+        grid-template-columns: 1fr;
+    }
+    .blog-step-header{
+        margin: 6vh calc(var(--index)*2);
+    }
+    .double-side-section{
+        margin: 6vh calc(var(--index)*2);
+        grid-template-columns: 1fr;
+    }
+    .images-in-row{
+        grid-template-columns: repeat(2, 49.9%);
+    }
+    .images-in-rowp{
+        margin: 0;
+    }
+    .two-side-section{
+        margin: 6vh calc(var(--index)*2);
+    }
+    
+    
+    h2, h3, h4{
+        font-size: calc(var(--index)*1.8);
+    }
+    li {
+        font-size: calc(var(--index)*1.4);
+        font-weight: 400;
+        counter-increment: custom-counter; 
+        position: relative; 
+        text-align: left;
+        margin: 0 0 1vh;
+    }
+    .right-side{
+        border: none;
+    }
+    .social-icon{
+        width: 40px;
+    }
+    
+}
+

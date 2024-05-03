@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности сайта Papabuild</title>
+    <style>
+        
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            font-family:  sans-serif;
+        }
+        :root{
+            --index: calc(1vw + 1vh);
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+            margin: 40px 50px;
+        }
+        p{
+            font-size: calc(var(--index)*0.9);
+            margin-bottom: 30px;
+        }
+        .block{
+            grid-template-columns: 1fr 48vw;
+            display: grid;
+            justify-content: end;
+            gap: 3vw;
+        }
+        .block-text{
+            margin-left: calc(var(--index)*8)
+        }
+        .image img{
+            width:auto;
+            height: auto;
+        }
+        
+.head-block{
+    padding: 5px 30px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #FFF; 
+    transition: 0.3s; 
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.head-block.smaller {
+    padding: 0px 20px;
+    height: 60px; 
+}
+
+.header__log img{
+    height: 40px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.center-text{
+    margin: 6vh calc(var(--index)*16);
+    text-align: center;
+}
+
+
+.social-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-images{
+    display: block;
+}
+
+
+h2{
+    font-size: calc(var(--index)*1.2);
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.subhidding{
+    text-align: left;
+}
+
+.two-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    padding: 3vh 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: center;
+    gap: 3vw;
+}
+.on-of-side{
+    padding: 1vh 2vw;
+}
+ol,ul{
+    margin: 0 auto;
+}
+.right-side{
+    border: 1px solid lightgray;
+}
+li {
+    font-size: calc(var(--index)*0.9);
+    font-weight: 400;
+    counter-increment: custom-counter; 
+    position: relative; 
+    text-align: left;
+    margin: 0 0 1vh;
+}
+.second-section{
+    background-color: rgb(253, 244, 230);
+}
+span.price{
+    font-size: calc(var(--index)*1.4);
+    font-weight: 900;
+}
+footer{
+    background-color: black;
+}
+.copyright{
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: calc(var(--index)*0.6);
+}
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    
+    padding: 5vh 20px;
+}
+.footer-logo img{
+    height: 7vh;
+    width: auto;
+}
+.footer-social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon{
+    height: 5vh;
+    width: auto;
+}
+.footel-social-list li{
+    list-style-type: none;
+}
+.pages li{
+    list-style-type: none;
+}
+.pages a{
+    font-size: calc(var(--index)*0.8);
+    color: white;
+}
+.images-in-row{
+    width: 100%;
+    grid-template-columns: repeat(4, 24.9%);
+    display: grid;
+}
+.images-in-row image{
+    width: 10%;
+}
+.section-background{
+    background-color: rgb(255, 242, 226);
+}
+.blog-step-header{
+    margin: 6vh calc(var(--index)*8);
+    text-align: center;
+}
+h3{
+    font-size: calc(var(--index)*1.5);
+    margin-bottom: 2vh;
+}
+
+.number{
+    display: inline-block;
+    padding: calc(var(--index)*0.3) calc(var(--index)*1.3);
+    font-size: calc(var(--index)*3.2);
+    border: 2px solid greenyellow;
+}
+
+.double-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 3vw;
+}
+
+.full-width{
+    width: 100%;
+    height: auto;
+}
+
+
+
+h4{
+    font-size: calc(var(--index)*0.8);
+    margin-bottom: 2vh;
+}
+
+span.stronger{
+    font-weight: 600;
+}
+
+.video{
+    margin: 0 auto;
+    width: calc(var(--index)*30);
+    height: calc(var(--index)*10);
+}
+        @media screen and (max-width: 1480px){
+            p{
+                font-size: calc(var(--index)*1.1);
+            }
+            li {
+                font-size: calc(var(--index)*1.1);
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .two-side-section{
+                margin: 6vh calc(var(--index)* 2) 0;
+            }
+            .blog-step-header{
+                margin: 6vh calc(var(--index)*6);
+            }
+            .double-side-section{
+                margin: 6vh calc(var(--index)* 2) 0;
+            }
+            
+            .social-icon{
+                width: 20px;
+            }
+            .center-text{
+                margin: 6vh calc(var(--index)* 10);
+            }
+            .block-text{
+                margin-left: calc(var(--index)* 2);
+            }
+        }
+        @media screen and (max-width: 1000px){
+            h1{
+            font-size: calc(var(--index)*2.6);
+            }    
+            p{
+                font-size: calc(var(--index)*1.6);
+            }
+            
+            .video{
+                margin: 0 auto;
+                width: 100%;
+                height: 30vh;
+            }
+            .center-text{
+                margin: 6vh calc(var(--index)* 2);
+                text-align: left;
+            }
+            .block-text{
+                margin-left: 10px;
+            }
+            .block{
+                grid-template-columns: 1fr;
+            }
+            .two-side-section{
+                grid-template-columns: 1fr;
+            }
+            .blog-step-header{
+                margin: 6vh calc(var(--index)*2);
+            }
+            .double-side-section{
+                margin: 6vh calc(var(--index)*2);
+                grid-template-columns: 1fr;
+            }
+            .images-in-row{
+                grid-template-columns: repeat(2, 49.9%);
+            }
+            .images-in-rowp{
+                margin: 0;
+            }
+            .two-side-section{
+                margin: 6vh calc(var(--index)*2);
+            }
+            
+            h2, h3, h4{
+                font-size: calc(var(--index)*2);
+            }
+            li {
+                font-size: calc(var(--index)*1.6);
+                font-weight: 400;
+                counter-increment: custom-counter; 
+                position: relative; 
+                text-align: left;
+                margin: 0 0 1vh;
+            }
+
+            .right-side{
+                border: none;
+            }
+            .social-icon{
+                width: 30px;
+            }
+            .footer-block{
+                flex-direction: column;
+                gap: 70px;
+            }
+            .footel-social-list {
+                
+            }
+            .pages a{
+                font-size: calc(var(--index)*1.8);
+                color: white;
+            }
+            .image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .inner-article-div{
+            padding-top: 20px;
+            background-color: rgb(255, 243, 220);
+        }
+    </style>
+</head>
+<body>
+    <header class="head-block">
+        <div class="header__links">
+            <div class="header__log">
+                <a href="../index.html">
+                    <img src="../logo/papa_black.svg" alt="Логитип сайта papabuild.com">
+                </a>
+            </div>
+            <div class="social-nav">
+                    <h5>контакты:</h5>
+                    <nav>
+                        <a class="" href="#" aria-label="контакт со мной через телеграм приложение"> 
+                            <img class="social-icon" src="../social-icons/telegram-black.svg" alt="логотип telegram">
+                        </a>
+
+                        <a href="#" aria-label="контакт со мной через whatsapp приложение">
+                            <img class="social-icon" src="../social-icons/whatsap-black.svg" alt="логотип whatsapp">
+                        </a>
+
+                        <a href="#" aria-label="контакт со мной через facebook приложение">
+                            <img class="social-icon" src="../social-icons/facebook-black.svg" alt="логотип facebook">
+                        </a>
+                    </nav>
+            </div>
+        </div>
+        <div></div>
+    </header>
+    <h1>Политика конфиденциальности и использования файлов cookie сайта PapaBuild.com</h1>
+    <h2>Введение</h2>
+    <p>Мы, владельцы сайта PapaBuild.com, обязуемся защищать вашу конфиденциальность и обеспечивать прозрачность в отношении сбора и использования ваших данных. Настоящий документ описывает, как мы собираем, используем и защищаем вашу личную информацию, а также информацию о вашем использовании файлов cookie.</p>
+    <h2>Сбор личной информации</h2>
+    <p>Мы собираем личную информацию, когда вы посещаете наш сайт, включая, но не ограничиваясь, ваш IP-адрес, тип браузера, время доступа и адреса страниц, которые вы посещаете. Эти данные собираются с помощью файлов cookie и службы Google Analytics.</p>
+    <h2>Использование файлов cookie</h2>
+    <p>На сайте PapaBuild.com используются файлы cookie для улучшения качества вашего взаимодействия с сайтом, а также для анализа трафика с помощью Google Analytics. Файлы cookie — это небольшие текстовые файлы, которые сайт сохраняет на вашем устройстве. Вы можете управлять и отключать файлы cookie через настройки вашего браузера.</p>
+    <h2>Цели обработки данных</h2>
+    <p>Ваши данные используются для анализа использования сайта, улучшения содержания сайта, а также для обеспечения безопасности сайта и его пользователей. Мы не распространяем личные данные третьим лицам, за исключением случаев, предусмотренных законом.</p>
+    <h2>Ваши права</h2>
+    <p>Вы имеете право запросить доступ к вашим личным данным, их исправление или удаление. Также вы можете воспользоваться правом возражения против обработки ваших данных и правом на ограничение обработки.</p>
+    <h2>Контактная информация</h2>
+    <p>Для вопросов, связанных с данной политикой, вы можете связаться с нами по адресу: rmigunov1@gmail.com.</p>
+    <h2>Изменения в политике конфиденциальности</h2>
+    <p>Мы оставляем за собой право вносить изменения в настоящую политику. Последнее обновление политики произведено 03.05.2024.</p>
+    <footer>    
+        <div class="footer-block">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../logo/papa_white.svg" alt="">
+                </a>
+            </div>
+            <div class="other-pages">
+                <ul class="pages">
+                    <li>
+                        <a href="./index.html">Главная страница</a>
+                    </li>
+                    <li>
+                        <a href="./veranda-terrasa.html">Постройка Веранды</a>
+                    </li>
+                    <li>
+                        <a href="./metallicheskaya-konstrukciya.html">Металлический Навес</a>
+                    </li>
+                    <li>
+                        <a href="./sroitelstvo-bani.html">Русская Баня</a>
+                    </li>
+                    <li>
+                        <a href="./privacy-policy.html">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul class="footel-social-list">
+                    <li>
+                        <a href="#" aria-label="контакт со мной через телеграм приложение">
+                            <img class="footer-icon" src="../social-icons/telegram.svg" alt="логотип telegram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="контакт со мной через whatsapp приложение">
+                            <img class="footer-icon" src="../social-icons/whatsap.svg" alt="логотип whatsapp">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="контакт со мной через facebook приложение">
+                            <img class="footer-icon" src="../social-icons/facebook.svg" alt="логотип facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Papabuild. Riga, Latvia.</p>
+    </footer>
+</body>
+</html>

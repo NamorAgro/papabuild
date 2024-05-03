@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги по строительным и сварочным работам | Металлические и деревянные конструкции.</title>
+    <meta name="description" content="Предоставляю услуги по строительству из дерева и металла. Cварочные работы и работы по строительству бань. Возведение заборов и металлоконструкций.">
+
+    <!-- <link rel="preload" href="./style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+    <!-- <link defer rel="stylesheet" href="./style.css" media="all"> -->
+
+    <!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" as="font" rel="stylesheet"> -->
+    <style>
+        h1{
+            font-size: calc(var(--index)*2);
+            line-height: 0.9;
+            color: white;
+            font-weight: 700;
+            padding: 0 30px;
+        }
+        p{
+            font-size: calc(var(--index)*0.9);
+            color: white;
+            font-weight: 300;
+            padding: 0 30px;
+            margin-top: 20px ;
+            margin-bottom: 20px ;
+        }
+        .wrapper__hello-text{
+            margin-bottom: 35px ;
+        }
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body
+{   
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+:root{
+    --index: calc(1vw + 1vh);
+}
+
+.webgl
+{
+    position: fixed;
+
+}
+.section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    grid-template-columns: 5fr 2fr;
+    position: fixed;
+    display: grid;
+    align-items: center;
+    padding-top: calc(var(--index) * 0.6);
+    
+}
+
+.header__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.header__list li{
+    color: white;
+    list-style-type: none;
+
+}
+
+.social-icon{
+    width: calc(var(--index) * 1);
+    height: calc(var(--index) * 1);
+}
+
+.heaedr__logo img{
+    display: flex;
+    justify-content: center;
+    height: calc(var(--index) * 3);
+    width: calc(var(--index) * 3);
+
+    color: white;
+    margin-right: 20px;
+}
+
+.wrapper{
+    height: 100%;
+
+    width: calc(var(--index) * 27);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: calc(var(--index) * 0.6) 0;
+}
+
+
+
+
+
+
+
+h2{
+    font-size: calc(var(--index) * 1.3);
+    color: white;
+    text-align: center;
+}
+
+h2::before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+h2::after{
+    content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        margin-top: 5px;
+}
+
+
+
+.projects-section{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    border-top: 1px solid white;
+    /* position: relative; */
+}
+
+
+.project-title{
+    font-size: calc(var(--index) * 0.8);
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 100%;
+    height: calc(var(--index) * 3);
+    cursor: pointer;
+}
+.project-title:hover{
+    border: 1px solid white;
+}
+
+.about-project{
+    display: none;
+}
+
+.project-out-text{
+    padding: 0 calc(var(--index) * 1.2);
+}
+
+#insert-text{
+    color: white;
+    font-size: calc(var(--index) * 0.8);
+    font-weight: 300;
+}
+#go-to-blog{
+    margin-top: 10px;
+}
+ a.blog-link{
+    font-size: calc(var(--index) * 0.8);
+    color: white;
+ }
+
+/* ------ for mobile ------- */
+/* ------ for mobile ------- */
+/* ------ for mobile ------- */
+
+.blog-link{
+
+    display: none;
+}
+
+
+@media screen and (max-width: 740px) {
+    .section{
+        width: 100%;
+        height: 100vh;
+
+    }
+    
+    .header{
+        width: 100%;
+        grid-template-columns: 1fr;
+        position: relative;
+        display: grid;
+        align-items: center;
+        padding: 10px calc(var(--index)* 1.2);
+
+    }
+
+    ul {
+        gap: 50px;
+    }
+
+    .social-icon{
+        color: black;
+        width: calc(var(--index) * 2);
+        height: calc(var(--index) * 2);
+    }
+
+    .heaedr__logo{
+        width: calc(var(--index) * 3);
+        
+        height: auto;
+    }
+
+    .header__list li{
+        color: black;
+        list-style-type: none;
+    }
+
+    .wrapper{
+
+        width: 100%;
+        background-color: transparent;
+
+        height: 100%;
+    }
+
+    
+
+    .projects-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: calc(var(--index) * 1.8);
+        color: white;
+        text-align: center;
+    }
+    
+    h2::before{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        margin-bottom: 5px;
+    }
+    h2::after{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        margin-top: 5px;
+    }
+
+    .project-title{
+        font-size: 2.8vw;
+        height: calc(var(--index) * 4);
+    }
+    .project-out-text{
+        position: absolute;
+        bottom: 0;
+    }
+    #insert-text{
+        font-size: calc(var(--index) * 1.2);
+    }
+    #go-to-blog{
+        margin-bottom: 20px;
+    }
+    a.blog-link{
+        font-size: calc(var(--index) * 1.2);
+        
+    }
+    p{
+        font-size: 22px;
+    }
+    .project-main-text{
+        margin: 20px 0 ;
+    }
+    h1{
+        font-size: 22px;
+    }
+}
+    
+
+            
+    </style>
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <div class="section">
+        <div class="header">
+            <div>
+            </div>
+            <div class="header__links">
+                <ul class="header__list">
+                    <li>
+                        <a href="">
+                            <img class="social-icon" src="./social-icons/telegram-black.svg" alt="" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="social-icon" src="./social-icons/whatsap-black.svg" alt="" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="social-icon" src="./social-icons/facebook-black.svg" alt="" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+                <div class="heaedr__logo">
+                    <img src="./logo/papa_black.svg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h1>Сварка и строительство из металла, дерева или бетона.</h1>
+            <p class="wrapper__hello-text">
+                Приветствую! Меня зовут Александр. Я живу в Риге, Латвия
+                Строительство – моя страсть и профессия. 
+                <strong>У меня богатый опыт в сфере строительства и сварочных работ.</strong> Возвожу металлоконструкций, строю на заказ беседки и бани. 
+                Оказываю услуги по сварке.
+                
+            </p>
+            <article class="projects-list">
+                <div class="projects-title">
+                    <h2>Мои проекты</h2>
+                    <p class="project-main-text">
+                        За годы практики я реализовал десятки проектов:
+                        металлические стелажи, деревянные конструкции, бетонные работы, ремонтные работы, возведение заборов и строительсто бань.
+                        Здесь я выделю самые яркие из них. 
+                    </p>
+                </div>
+                <div class="projects-section">
+                    <article class="project-block ">
+                        <button id="terase" class="project-title"><h3>Деревянная<br> Беседка</h3></button>
+                        <p class="about-project no-width">
+                            Летняя, надежная беседка или веранда из дерева, для отдыха на свежем воздухе.
+                        </p>
+                        <a href="./veranda-terrasa.html"></a>
+                    </article>
+                    <article class="project-block">
+                        <button id="metal_const" class="project-title"><h3 >Навес<br> Из металла</h3></button>
+                        <p class="about-project">
+                            Надежная металлическая, сварная конструкция для стоянки машин или хранения вещей. Защищает от осадков и служит надежным укрытием. 
+                        </p>
+                        <a href="./metallicheskaya-konstrukciya.html"></a>
+                    </article>
+                    <article class="project-block">
+                        <button id="bania" class="project-title"><h3>Русская<br> Баня</h3></button>
+                        <p class="about-project visible"> 
+                            Баня из дерева, металла и бетона. Парилка из лиственницы для хорошего отдыха душой и телом. Сварная, крепкая печь из металла служит долгие годы и выдерживает большие температуры. 
+                        </p>
+                        <a href="./sroitelstvo-bani.html"></a>
+                    </article>
+                </div>
+                <div class="project-out-text">
+                    <div id="insert-text">
+                        
+                    </div>
+                    <div id="go-to-blog">
+                        <a class="blog-link" href="./metal/index.html">Смотреть проект подробно.</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+          var link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './style.css';
+          document.head.appendChild(link);
+        });
+      </script>
+      
+    <script>
+        window.addEventListener('load', (event) => {
+            function loadThreeJSScript() {
+                const script = document.createElement('script');
+                script.src = './script.js';
+                script.type = 'module';
+                script.async = true;
+                document.body.appendChild(script);
+    
+                script.onload = () => {
+                    console.log('Three.js script loaded successfully.');
+                };
+            }
+    
+            loadThreeJSScript();
+        });
+    </script>
+    
+    <script defer type="module" src="./for_index.js" ></script>
+
+</body>
+</html>

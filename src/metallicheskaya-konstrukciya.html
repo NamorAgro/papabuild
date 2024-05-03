@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сварка, производство и монтаж металлических конструкций.</title>
+    <meta name="description" content="Услуги по сварочным работам в Латвии. Сборка, производство и монтаж надежных и крепких металлических конструкций для различных задач и разной сложности.">
+    <style>
+        
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            font-family:  sans-serif;
+        }
+        :root{
+            --index: calc(1vw + 1vh);
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+            margin: 40px 50px;
+        }
+        p{
+            font-size: calc(var(--index)*0.9);
+            margin-bottom: 30px;
+        }
+        .block{
+            grid-template-columns: 1fr 48vw;
+            display: grid;
+            justify-content: end;
+            gap: 3vw;
+        }
+        .block-text{
+            margin-left: calc(var(--index)*8)
+        }
+        .image img{
+            width:auto;
+            height: auto;
+        }
+        
+.head-block{
+    padding: 5px 30px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #FFF; 
+    transition: 0.3s; 
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.head-block.smaller {
+    padding: 0px 20px;
+    height: 60px; 
+}
+
+.header__log img{
+    height: 40px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.center-text{
+    margin: 6vh calc(var(--index)*16);
+    text-align: center;
+}
+
+
+.social-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-images{
+    display: block;
+}
+
+
+h2{
+    font-size: calc(var(--index)*1.2);
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.subhidding{
+    text-align: left;
+}
+
+.two-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    padding: 3vh 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: center;
+    gap: 3vw;
+}
+.on-of-side{
+    padding: 1vh 2vw;
+}
+ol,ul{
+    margin: 0 auto;
+}
+.right-side{
+    border: 1px solid lightgray;
+}
+li {
+    font-size: calc(var(--index)*0.9);
+    font-weight: 400;
+    counter-increment: custom-counter; 
+    position: relative; 
+    text-align: left;
+    margin: 0 0 1vh;
+}
+.second-section{
+    background-color: rgb(253, 244, 230);
+}
+span.price{
+    font-size: calc(var(--index)*1.4);
+    font-weight: 900;
+}
+footer{
+    background-color: black;
+}
+.copyright{
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: calc(var(--index)*0.6);
+}
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    
+    padding: 5vh 20px;
+}
+.footer-logo img{
+    height: 7vh;
+    width: auto;
+}
+.footer-social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon{
+    height: 5vh;
+    width: auto;
+}
+.footel-social-list li{
+    list-style-type: none;
+}
+.pages li{
+    list-style-type: none;
+}
+.pages a{
+    font-size: calc(var(--index)*0.8);
+    color: white;
+}
+.images-in-row{
+    width: 100%;
+    grid-template-columns: repeat(4, 24.9%);
+    display: grid;
+}
+.images-in-row image{
+    width: 10%;
+}
+.section-background{
+    background-color: rgb(255, 242, 226);
+}
+.blog-step-header{
+    margin: 6vh calc(var(--index)*8);
+    text-align: center;
+}
+h3{
+    font-size: calc(var(--index)*1.5);
+    margin-bottom: 2vh;
+}
+
+.number{
+    display: inline-block;
+    padding: calc(var(--index)*0.3) calc(var(--index)*1.3);
+    font-size: calc(var(--index)*3.2);
+    border: 2px solid greenyellow;
+}
+
+.double-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 3vw;
+}
+
+.full-width{
+    width: 100%;
+    height: auto;
+}
+
+
+
+h4{
+    font-size: calc(var(--index)*0.8);
+    margin-bottom: 2vh;
+}
+
+span.stronger{
+    font-weight: 600;
+}
+
+.video{
+    margin: 0 auto;
+    width: calc(var(--index)*30);
+    height: calc(var(--index)*10);
+}
+        @media screen and (max-width: 1480px){
+            p{
+                font-size: calc(var(--index)*1.1);
+            }
+            li {
+                font-size: calc(var(--index)*1.1);
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .two-side-section{
+                margin: 6vh calc(var(--index)* 2) 0;
+            }
+            .blog-step-header{
+                margin: 6vh calc(var(--index)*6);
+            }
+            .double-side-section{
+                margin: 6vh calc(var(--index)* 2) 0;
+            }
+            
+            .social-icon{
+                width: 20px;
+            }
+            .center-text{
+                margin: 6vh calc(var(--index)* 10);
+            }
+            .block-text{
+                margin-left: calc(var(--index)* 2);
+            }
+        }
+        @media screen and (max-width: 1000px){
+            h1{
+            font-size: calc(var(--index)*2.6);
+            }    
+            p{
+                font-size: calc(var(--index)*1.6);
+            }
+            
+            .video{
+                margin: 0 auto;
+                width: 100%;
+                height: 30vh;
+            }
+            .center-text{
+                margin: 6vh calc(var(--index)* 2);
+                text-align: left;
+            }
+            .block-text{
+                margin-left: 10px;
+            }
+            .block{
+                grid-template-columns: 1fr;
+            }
+            .two-side-section{
+                grid-template-columns: 1fr;
+            }
+            .blog-step-header{
+                margin: 6vh calc(var(--index)*2);
+            }
+            .double-side-section{
+                margin: 6vh calc(var(--index)*2);
+                grid-template-columns: 1fr;
+            }
+            .images-in-row{
+                grid-template-columns: repeat(2, 49.9%);
+            }
+            .images-in-rowp{
+                margin: 0;
+            }
+            .two-side-section{
+                margin: 6vh calc(var(--index)*2);
+            }
+            
+            h2, h3, h4{
+                font-size: calc(var(--index)*2);
+            }
+            li {
+                font-size: calc(var(--index)*1.6);
+                font-weight: 400;
+                counter-increment: custom-counter; 
+                position: relative; 
+                text-align: left;
+                margin: 0 0 1vh;
+            }
+
+            .right-side{
+                border: none;
+            }
+            .social-icon{
+                width: 30px;
+            }
+            .footer-block{
+                flex-direction: column;
+                gap: 70px;
+            }
+            .footel-social-list {
+                
+            }
+            .pages a{
+                font-size: calc(var(--index)*1.8);
+                color: white;
+            }
+            .image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .inner-article-div{
+            padding-top: 20px;
+            background-color: rgb(255, 243, 220);
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="head-block">
+        <div class="header__links">
+            <div class="header__log">
+                <a href="../index.html">
+                    <img src="../logo/papa_black.svg" alt="Логитип сайта papabuild.com">
+                </a>
+            </div>
+            <div class="social-nav">
+                    <h5>контакты:</h5>
+                    <nav>
+                        <a class="" href="#" aria-label="контакт со мной через телеграм приложение"> 
+                            <img class="social-icon" src="../social-icons/telegram-black.svg" alt="логотип telegram">
+                        </a>
+
+                        <a href="#" aria-label="контакт со мной через whatsapp приложение">
+                            <img class="social-icon" src="../social-icons/whatsap-black.svg" alt="логотип whatsapp">
+                        </a>
+
+                        <a href="#" aria-label="контакт со мной через facebook приложение">
+                            <img class="social-icon" src="../social-icons/facebook-black.svg" alt="логотип facebook">
+                        </a>
+                    </nav>
+            </div>
+        </div>
+        <div></div>
+    </header>
+    <article>
+        <h1>Сварочные работы: <br>Постройка и монтаж металличесвкого навеса.</h1>
+        <div class="block">
+            <div class="block-text">
+                <p>Сварочные работы и строительство металлических конструкций – моё призвание. </p>
+                <p><strong>Многолетний опыт в сварке позволяет мне создавать мощные и надёжные металлические навесы</strong>, которые служат верной защитой для автомобилей и другого имущества.</p>
+                <p>
+                    Современное оборудование и использование передовых методик сварки позволяют мне гарантировать высокую прочность соединений. При строительстве навесов особое внимание уделяется не только качеству сварных швов, но и общей стабильности. Если вам необходим устойчивый и долговечный металлический навес, выполненный с мастерством и точностью, то ваш выбор это мой вариант навеса.
+                </p>
+                <p><strong>Цена этой конструкции составляла 5000 €</strong></p>
+            </div>
+            <div class="image">
+                <p>
+                    <img src="../img/metal/finished1.webp" loading="lazy" alt="Металлический навес для машин кирпичного цвета. Навес для защиты автомобилей от осадков."
+                    srcset="../img/metal/finished1-small.webp 2000w" 
+                    sizes="">
+                </p>
+            </div>
+        </div>
+        <article class="inner-artcile second-section">
+            <header class="blog-step-header">
+                <h2>План строительства<br> металлического сварного навеса<br>и список материалов.</h2>
+            </header>
+            <p class="center-text">
+                Перейдем к практическим аспектам строительства вашего металлического навеса. Чтобы обеспечить прозрачность процесса и помочь вам в планировании бюджета, ниже представлен детализированный список необходимых материалов и этапы работ.
+            </p>
+            <div class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sEu2QmyPu0U?si=a6tGWeFYHvr_Pwcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="double-side-section">
+                    <article>
+                            <h2 class="subhidding">План работ по строительству навеса из металла:</h2>
+                            <ol>
+                                <li>Встреча с заказчиком - клиентом, обсуждение услуг, проекта и цен.</li>
+                                <li>Рассчет проекта и создание чертежа.</li>
+                                <li>Подготовка площадки.</li>
+                                <li>Разметка высотных отметок, основания фундамента.</li>
+                                <li>Возведение и сварка каркаса строения.</li>
+                                <li>Настил крыши.</li>
+                                <li>Обшивка конструкции.</li>
+                            </ol>
+                    </article>
+                    <article>
+                            <h2 class="subhidding">Список материалов для постройки навеса:</h2>
+                            <ul>
+                                <li>Бетон 4.2 куба.</li>
+                                <li>Арматура, диаметр 10 - 30 метров.</li>
+                                <li>Двутавровая балка 18-я - 12 метров.</li>
+                                <li>Двутавровая балка 16-я - 6 метров.</li>
+                                <li>Квадратная труба 100 x 100 - 18 метров.</li>
+                                <li>Квадратная труба 60 x 60 - 30 метров.</li>
+                                <li>Квадратная труба 80 x 40 - 66 метров.</li>
+                                <li>Доски обрезные 100 x 32 - 180 метров.</li>
+                                <li>Краша - 84 метра квадратных.</li>
+                                <li>Краска - 5 литров.</li>
+                            </ul>
+                    </article>
+            </div>
+        </article>
+        <section class="image-row">
+            <div class="images-in-row">
+                <p>
+                    <img src="../img/metal/metal-beams.webp" loading="lazy" alt="Металлические Двутавровые балки."
+                    srcset="../img/metal/metal-beams-small.webp 2400w" 
+                    sizes="">
+                </p>
+                <p>
+                    <img src="../img/metal/workeк_1.webp" loading="lazy" alt="Сварщик в маске для сварки, варик металлические элементы. Процесс производства, строительства на открытом воздухе."
+                    srcset="../img/metal/worker-small_1.webp 2400w" 
+                    sizes="">
+                </p>
+                <p>
+                    <img src="../img/metal/metal-beam-colors.webp" loading="lazy" alt="Металлические палки с местами желтого и голубого цвета."
+                    srcset="../img/metal/metal-beam-colors-small.webp 2400w" 
+                    sizes="">
+                </p>
+                <p>
+                    <img src="../img/metal/welder-2.webp" loading="lazy" alt="Процесс сварки металлической конструкции на заднем дворе дома. В центре фотографии сварщик в защитной маске."
+                    srcset="../img/metal/welder-2-small.webp 2400w" 
+                    sizes="">
+                </p>
+            </div>
+        </section>
+        <section class="works-flow-section">
+            <div class="double-side-section">
+                <div class="">
+                    <h3>Первый этап строительcтва навеса<br>Подробное планирование.</h3>
+                    <p>
+                        Первый шаг в строительстве металлического навеса – это тщательное планирование. <br><br>На этом этапе мы обсуждаем все ключевые детали: стоимость, сроки реализации проекта и выбор материалов. <br>Важно не только понять и учесть все пожелания клиента, но и предложить оптимальные решения. <br>Например, иногда рекомендуется отказаться от центральной балки в конструкции навеса, что позволяет эффективнее использовать пространство без ущерба для прочности и функциональности. <br><br>Это помогает достигнуть максимальной эффективности проекта и удовлетворить потребности клиента.
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        <img src="../img/metal/plan.webp" loading="lazy" alt="Эскиз плана навеса."
+                        srcset="../img/metal/plan-small.webp 2400w" 
+                        sizes="">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="works-flow-section section-background">
+            <div class="double-side-section">
+                <div class="">
+                    <h3>Второй этап:<br>Очистка территории и разметка.</h3>
+                    <p>
+                        Перед началом возведения металлического навеса необходимо тщательно подготовить территорию. <br><br>Использование профессионального нивелира позволяет выполнить точную геометрическую разметку под основания металлических стоек, гарантируя идеальную горизонтальность конструкции. <br> <br>Такой подход к подготовке площадки является ключевым для качественного выполнения всех последующих этапов строительства металлических навесов и сварочных работ, укрепляя мой опыт в сфере металлоконструкций.
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        <img src="../img/metal/nivelir.webp" loading="lazy" alt="Строительный прибор нивелир направлен на подготовленную территорию для строительства."
+                        srcset="../img//metal/nivelir-small.webp 2000w" 
+                        sizes="">
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="works-flow-section">
+            <div class="double-side-section">
+                <div class="">
+                    <h3>Третий этап строительства:<br>Заливка фундамента.</h3>
+                    <p>
+                        <span class="stronger">Заливка фундамента является критически важным этапом в процессе строительства металлических навесов.</span> <br><br>Начинается он с тщательной подготовки опалубки, которая формирует контуры будущих бетонных оснований для каждой стойки.<br>Для обеспечения высокой надёжности и долговечности конструкции, в последнем проекте было использовано 4.2 кубометра качественного бетонного раствора.<br> <br>Особое внимание уделяется установке металлических <i>пяток</i> прямо в бетонные основания до их окончательного затвердевания.<br>Эти металлические закладные, интегрированные в фундамент, обеспечивают прочное основание для последующего крепления несущих столбов путём сварки. Такой метод заливки фундамента гарантирует стабильность всей конструкции и её устойчивость к различным нагрузкам, что является залогом безопасности и долголетия металлического навеса.
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        <img src="../img/metal/amplifiers.webp" loading="lazy" alt="Металлический закладной элемент для бетонных работ. "
+                        srcset="../img/metal/amplifiers-small.webp 2400w" 
+                        sizes="">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section-background" >
+            <header class="blog-step-header">
+                <h3>Сварочные работы.</h3>
+            </header>
+            <p>
+                <img class="full-width" src="../img/metal/metal-frame.webp" loading="lazy" alt="Каркас металлического навеса на открытом воздухе."
+                    srcset="../img/metal/metal-frame-small.webp 2400w" 
+                    sizes="">
+            </p>
+            <div class="double-side-section">
+                <div class="">
+                    <p>
+                        <span class="stronger">Сварочные работы</span> начинаются сразу после того, как бетон достигает необходимой прочности. <br>Этот этап критически важен для обеспечения стабильности и долговечности металлического навеса. <br><br>Процесс начинается с приваривания несущих балок к металлическим закладным, установленным ранее в бетон. Затем, используя сварочное оборудование, металлические стойки соединяются между собой с помощью квадратных и прямоугольных балок, формируя прочный и надёжный каркас.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <strong>Сварочные работы осуществляются соблюдая все технические и безопасные стандарты.</strong><br><br> Каждое соединение тщательно проверяется на прочность, что гарантирует устойчивость конструкции к различным нагрузкам.<br> Особое внимание уделяется геометрии крыши — создание оптимального уклона способствует эффективному отводу дождевой воды и предотвращению накопления влаги, увеличивая тем самым срок службы всей конструкции. Оказывая эту услугу, навес будет выполнен на высшем уровне качества.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="works-flow-section">
+            <div class="double-side-section">
+                    <section>
+                        <h3>Обшивка металлической конструкции и укладка крыши.</h3>
+                            <p>
+                                Завершающий этап строительства металлического навеса включает обшивку конструкции и монтаж кровли. Это важно не только для эстетической привлекательности, но и для функциональной надежности. Первым делом устанавливаются деревянные балки на металлический каркас. Эти балки служат промежуточными дистанционниками, увеличивая жесткость конструкции и облегчая монтаж металлических листов кровельного покрытия. Металлические листы надежно прикручиваются к деревянным балкам, создавая прочную и устойчивую кровлю.
+                            </p>
+                            <p>
+                            Финальный шаг – подшивка навеса вокруг периметра, что способствует улучшенной защите от атмосферных воздействий, таких как осадки и ветер. При выборе материалов для обшивки учитываются не только их долговечность и устойчивость к погодным условиям, но и соответствие общему дизайну конструкции. 
+                           </p>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            <img src="../img/metal/garage.webp" loading="lazy" alt="Два автомобиля стоят под крышей металлического навеса."
+                            srcset="../img/metal/garage-small.webp 2400w" 
+                            sizes="">
+                        </p>
+                    </section>
+            </div>
+        </section>
+    </article>
+    <footer>    
+        <div class="footer-block">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../logo/papa_white.svg" alt="">
+                </a>
+            </div>
+            <div class="other-pages">
+                <ul class="pages">
+                    <li>
+                        <a href="./index.html">Главная страница</a>
+                    </li>
+                    <li>
+                        <a href="./veranda-terrasa.html">Постройка Веранды</a>
+                    </li>
+                    <li>
+                        <a href="./metallicheskaya-konstrukciya.html">Металлический Навес</a>
+                    </li>
+                    <li>
+                        <a href="./sroitelstvo-bani.html">Русская Баня</a>
+                    </li>
+                    <li>
+                        <a href="./privacy-policy.html">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul class="footel-social-list">
+                    <li>
+                        <a href="#" aria-label="контакт со мной через телеграм приложение">
+                            <img class="footer-icon" src="../social-icons/telegram.svg" alt="логотип telegram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="контакт со мной через whatsapp приложение">
+                            <img class="footer-icon" src="../social-icons/whatsap.svg" alt="логотип whatsapp">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="контакт со мной через facebook приложение">
+                            <img class="footer-icon" src="../social-icons/facebook.svg" alt="логотип facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Papabuild. Riga, Latvia.</p>
+    </footer>
+    <script src="../inner.js" defer></script>   
+</body>
+</html>
