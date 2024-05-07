@@ -24,6 +24,9 @@ export default defineConfig({
             input: {
               main: resolve(src, 'index.html'),
               metal: resolve(src, 'metallicheskaya-konstrukciya/index.html'),
+              bania: resolve(src, 'stroitelstvo-bani/index.html'),
+              veranda: resolve(src, 'veranda-terrasa/index.html'),
+              privacy: resolve(src, 'privacy-policy/index.html'),
         }
         }
     },
