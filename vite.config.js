@@ -1,6 +1,7 @@
 import {resolve} from 'path'
 import {defineConfig} from 'vite'
 
+import { copy } from 'vite-plugin-copy';
 import glsl from 'vite-plugin-glsl';
 
 const src = resolve(__dirname, 'src')
@@ -32,6 +33,13 @@ export default defineConfig({
     },
     plugins: 
     [
-        glsl()
+        glsl(),
+        copy({
+            targets: [
+                { src: 'sitemap/sitemap.xml', dest: 'dist' }, // Укажите правильный исходный путь
+                { src: 'robot.txt', dest: 'dist' } // Укажите правильный исходный путь
+            ],
+            hook: 'writeBundle' // копирование после сборки проекта
+        })
     ]
 });
