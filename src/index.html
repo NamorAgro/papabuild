@@ -205,10 +205,16 @@ h2::after{
         position: relative;
         display: grid;
         align-items: center;
-        padding: 10px calc(var(--index)* 1.2);
+        padding: 10px 10px;
 
     }
-
+    h1{
+        font-size: calc(var(--index) * 2.8);
+        line-height: 0.9;
+        color: white;
+        font-weight: 700;
+        padding: 0 10px;
+    }
     ul {
         gap: 50px;
     }
@@ -287,14 +293,13 @@ h2::after{
         
     }
     p{
-        font-size: 22px;
+        font-size: calc(var(--index) * 1.6);
+        padding: 0 10px;
     }
     .project-main-text{
         margin: 20px 0 ;
     }
-    h1{
-        font-size: 22px;
-    }
+
 }
     
 
@@ -328,11 +333,9 @@ h2::after{
         <div class="wrapper">
             <h1>Сварка и строительство из металла, дерева или бетона.</h1>
             <p class="wrapper__hello-text">
-                Приветствую! Меня зовут Александр. Я живу в Риге, Латвия
-                Строительство – моя страсть и профессия. 
+                Меня зовут Александр. Я живу в Риге, Латвия.<br>
                 <strong>У меня богатый опыт в сфере строительства и сварочных работ.</strong> Возвожу металлоконструкций, строю на заказ беседки и бани. 
-                Оказываю услуги по сварке.
-                
+
             </p>
             <article class="projects-list">
                 <div class="projects-title">
@@ -371,7 +374,7 @@ h2::after{
                         
                     </div>
                     <div id="go-to-blog">
-                        <a class="blog-link" href="./metal/index.html">Смотреть проект подробно.</a>
+                        <a class="blog-link" href="./pages/metal/index.html">Смотреть проект подробно.</a>
                     </div>
                 </div>
             </article>

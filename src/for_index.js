@@ -21,3 +21,19 @@ articlesTitle.forEach((title) => {
         title.style.color = 'black'
     });
 });
+
+var desktopText = document.querySelector('.project-main-text');
+function handleSize(){
+    if (window.innerWidth < 740){
+        desktopText.style.display = 'none'
+        
+    }
+    else{
+        desktopText.style.display = 'block'
+
+    }
+}
+
+
+window.addEventListener('resize', handleSize);
+handleSize()

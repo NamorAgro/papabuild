@@ -13,7 +13,16 @@ export default {
     {
         outDir: '../dist', // Output in the dist/ folder
         emptyOutDir: true, // Empty the folder first
-        sourcemap: true // Add sourcemap
+        sourcemap: true, // Add sourcemap
+        rollupOptions: {
+            input: {
+                main: 'index.html',
+                metal: 'metallicheskaya-konstrukciya.html',
+                bania: 'sroitelstvo-bani.html',
+                veranda: 'veranda-terrasa.html',
+                privacy: 'privacy-policy.html',
+            }
+        }
     },
     plugins: 
     [
