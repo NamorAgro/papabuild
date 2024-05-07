@@ -240,11 +240,13 @@ h2::after{
 
         width: 100%;
         background-color: transparent;
-
+        padding: 0;
         height: 100%;
     }
 
-    
+    .wrapper__hello-text{
+        margin: calc(var(--index) * 1) 0;
+    }
 
     .projects-list{
         display: flex;
@@ -279,8 +281,7 @@ h2::after{
         height: calc(var(--index) * 4);
     }
     .project-out-text{
-        position: absolute;
-        bottom: 0;
+
     }
     #insert-text{
         font-size: calc(var(--index) * 1.2);
@@ -289,7 +290,10 @@ h2::after{
         margin-bottom: 20px;
     }
     a.blog-link{
+  
         font-size: calc(var(--index) * 1.2);
+        font-weight: 800;
+
         
     }
     p{
@@ -382,6 +386,7 @@ h2::after{
             </article>
         </div>
     </div>
+
     <script>
         window.addEventListener('load', function() {
           var link = document.createElement('link');
@@ -390,7 +395,7 @@ h2::after{
           document.head.appendChild(link);
         });
       </script>
-      
+
     <script defer type="module" src="./script.js"></script>
     <script defer type="module" src="./for_index.js" ></script>
     <!-- <script defer type="module" src="./cookie.js" ></script> -->

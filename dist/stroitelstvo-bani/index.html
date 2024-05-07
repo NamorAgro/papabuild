@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуга по строительству бани - сауны. Производство металлической печи для бани.</title>
+    <meta name="description" content="Предоставление услуг по постройке бани или сауны из дерева и бетона. Сварочные работы по производству металлических печей для бани или отопления помещений.">
+
+    <style>
+        
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            font-family:  sans-serif;
+        }
+        :root{
+            --index: calc(1vw + 1vh);
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+            margin: 40px 50px;
+        }
+        p{
+            font-size: calc(var(--index)*0.9);
+            margin-bottom: 30px;
+        }
+        .block{
+            grid-template-columns: 1fr 48vw;
+            display: grid;
+            justify-content: end;
+            gap: 3vw;
+        }
+        .block-text{
+            margin-left: calc(var(--index)*8)
+        }
+        .image img{
+            width:auto;
+            height: auto;
+        }
+        
+.head-block{
+    padding: 5px 30px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #FFF; 
+    transition: 0.3s; 
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.head-block.smaller {
+    padding: 0px 20px;
+    height: 60px; 
+}
+
+.header__log img{
+    height: 40px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.center-text{
+    margin: 6vh calc(var(--index)*16);
+    text-align: center;
+}
+
+
+.social-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-images{
+    display: block;
+}
+
+
+h2{
+    font-size: calc(var(--index)*1.2);
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.subhidding{
+    text-align: left;
+}
+
+.two-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    padding: 3vh 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: center;
+    gap: 3vw;
+}
+.on-of-side{
+    padding: 1vh 2vw;
+}
+ol,ul{
+    margin: 0 auto;
+}
+.right-side{
+    border: 1px solid lightgray;
+}
+li {
+    font-size: calc(var(--index)*0.9);
+    font-weight: 400;
+    counter-increment: custom-counter; 
+    position: relative; 
+    text-align: left;
+    margin: 0 0 1vh;
+}
+.second-section{
+    background-color: rgb(253, 244, 230);
+}
+span.price{
+    font-size: calc(var(--index)*1.4);
+    font-weight: 900;
+}
+footer{
+    background-color: black;
+}
+.copyright{
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: calc(var(--index)*0.6);
+}
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    
+    padding: 5vh 20px;
+}
+.footer-logo img{
+    height: 7vh;
+    width: auto;
+}
+.footer-social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon{
+    height: 5vh;
+    width: auto;
+}
+.footel-social-list li{
+    list-style-type: none;
+}
+.pages li{
+    list-style-type: none;
+}
+.pages a{
+    font-size: calc(var(--index)*0.8);
+    color: white;
+}
+.images-in-row{
+    width: 100%;
+    grid-template-columns: repeat(4, 24.9%);
+    display: grid;
+}
+.images-in-row image{
+    width: 10%;
+}
+.section-background{
+    background-color: rgb(255, 242, 226);
+}
+.blog-step-header{
+    margin: 6vh calc(var(--index)*8);
+    text-align: center;
+}
+h3{
+    font-size: calc(var(--index)*1.5);
+    margin-bottom: 2vh;
+}
+
+.number{
+    display: inline-block;
+    padding: calc(var(--index)*0.3) calc(var(--index)*1.3);
+    font-size: calc(var(--index)*3.2);
+    border: 2px solid greenyellow;
+}
+
+.double-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 3vw;
+}
+
+.full-width{
+    width: 100%;
+    height: auto;
+}
+
+
+
+h4{
+    font-size: calc(var(--index)*0.8);
+    margin-bottom: 2vh;
+}
+
+span.stronger{
+    font-weight: 600;
+}
+
+.video{
+    margin: 0 auto;
+    width: calc(var(--index)*30);
+    height: calc(var(--index)*10);
+}
+        @media screen and (max-width: 1480px){
+            p{
+                font-size: calc(var(--index)*1.1);
+            }
+            li {
+                font-size: calc(var(--index)*1.1);
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .two-side-section{
+                margin: 6vh calc(var(--index)* 2) 0;
+            }
+            .blog-step-header{
+                margin: 6vh calc(var(--index)*6);
+            }
+            .double-side-section{
+                margin: 6vh calc(var(--index)* 2) 0;
+            }
+            
+            .social-icon{
+                width: 20px;
+            }
+            .center-text{
+                margin: 6vh calc(var(--index)* 10);
+            }
+            .block-text{
+                margin-left: calc(var(--index)* 2);
+            }
+        }
+        @media screen and (max-width: 1000px){
+            h1{
+            font-size: calc(var(--index)*2.6);
+            }    
+            p{
+                font-size: calc(var(--index)*1.6);
+            }
+            
+            .video{
+                margin: 0 auto;
+                width: 100%;
+                height: 30vh;
+            }
+            .center-text{
+                margin: 6vh calc(var(--index)* 2);
+                text-align: left;
+            }
+            .block-text{
+                margin-left: 10px;
+            }
+            .block{
+                grid-template-columns: 1fr;
+            }
+            .two-side-section{
+                grid-template-columns: 1fr;
+            }
+            .blog-step-header{
+                margin: 6vh calc(var(--index)*2);
+            }
+            .double-side-section{
+                margin: 6vh calc(var(--index)*2);
+                grid-template-columns: 1fr;
+            }
+            .images-in-row{
+                grid-template-columns: repeat(2, 49.9%);
+            }
+            .images-in-rowp{
+                margin: 0;
+            }
+            .two-side-section{
+                margin: 6vh calc(var(--index)*2);
+            }
+            
+            h2, h3, h4{
+                font-size: calc(var(--index)*2);
+            }
+            li {
+                font-size: calc(var(--index)*1.6);
+                font-weight: 400;
+                counter-increment: custom-counter; 
+                position: relative; 
+                text-align: left;
+                margin: 0 0 1vh;
+            }
+
+            .right-side{
+                border: none;
+            }
+            .social-icon{
+                width: 30px;
+            }
+            .footer-block{
+                flex-direction: column;
+                gap: 70px;
+            }
+
+            .pages a{
+                font-size: calc(var(--index)*1.8);
+                color: white;
+            }
+            .image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .inner-article-div{
+            padding-top: 20px;
+            background-color: rgb(255, 243, 220);
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="head-block">
+        <div class="header__links">
+            <div class="header__log">
+                <a href="../index.html">
+                    <img src="../logo/papa_black.svg" alt="Логитип сайта papabuild.com">
+                </a>
+            </div>
+            <div class="social-nav">
+                    <h5>контакты:</h5>
+                    <nav>
+                        <a class="https://t.me/papabuild" href="#" aria-label="контакт со мной через телеграм приложение"> 
+                            <img class="social-icon" src="../social-icons/telegram-black.svg" alt="логотип telegram">
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=37122112948" aria-label="контакт со мной через whatsapp приложение">
+                            <img class="social-icon" src="../social-icons/whatsap-black.svg" alt="логотип whatsapp">
+                        </a>
+                    </nav>
+            </div>
+        </div>
+        <div></div>
+    </header>
+    <article>
+        <h1>Постройка бани: <br>парилка и металлическая сварная печь.</h1>
+        <div class="block">
+            <div class="block-text">
+                <p>Комплексная услугу по строительству бани, которая включает в себя два ключевых элемента: постройку парилки и изготовление металлической сварной печи.  </p>
+                <p>Строительство бани — это всегда уникальный и творческий процесс, где каждый проект является неповторимым. Баня может принимать самые разнообразные формы, отражая индивидуальные предпочтения и нужды её владельца.</p>
+            </div>
+            <div class="image">
+                <p>
+                    <img src="../img/bania/inside-sauna.webp" loading="lazy" alt="Деревянное, банное помещение. Лежат веники и ведро для воды."
+                    srcset="../img/bania/inside-sauna-small.webp 2000w" 
+                    sizes="">
+                </p>
+            </div>
+        </div>
+        <article>
+            <div class="inner-article-div">
+                <h2>Производство металлической печи для бани.</h2>
+                <p class="center-text">Создание металлической печи для бани – это комплексная услуга, включающая дизайн, изготовление и установку высококачественной печи.<br> Процесс начинается с выбора металла общей площадью около двух квадратных метров, из которого будет выполнена конструкция печи.</p>
+            </div>
+            <section class="works-flow-section">
+                    
+                <div class="double-side-section">
+                    <div class="">
+                        <h3>Конструкция печки и материалы.</h3>
+                        <p>
+                            Металлическая печь <i>вариться</i> из металла разной толщины для оптимальной эффективности и долговечности.<br><br> В зонах, где предполагается высокая тепловая нагрузка и прямой контакт с огнем, используется металл толщиной 8 миллиметров. Для остальных частей печи достаточно 6-миллиметрового металла.
+                        </p>
+                    </div>
+                    <div class="">
+                        <p>
+                            <img src="../img/bania/owen-fire.webp" loading="lazy" alt="Горящие дрова внутри металлической печи."
+                            srcset="../img/bania/owen-fire-small.webp 2400w" 
+                            sizes="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="works-flow-section">
+                <div class="double-side-section">
+                    <div class="">
+                        <h3>Особенности конструкции металличествой печи.</h3>
+                        <p>
+                            Печь оборудуется колосниками для улучшенной вентиляции и эффективного сгорания дров, а также имеет специальные полости для закладки камней, расположенные в центре и сверху печи. Это позволяет равномерно распределять тепло и создавать идеальные условия для банных процедур.
+                        </p>
+                    </div>
+                    <div class="">
+                        <p>
+                            <img src="../img/bania/owen-out.webp" loading="lazy" alt="Металлическая самодельная печь для бани, встроенная в кирпичную стену."
+                            srcset="../img/bania/owen-out-small.webp 2400w" 
+                            sizes="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="works-flow-section">
+                <div class="double-side-section">
+                    <div class="">
+                        <h3>Дымоотвод металличесвой печи для бани.</h3>
+                        <p>
+                            Важной частью печи является дымоход, изготовленный из металла толщиной 4,5 миллиметра и имеющий диаметр 150 мм. Это обеспечивает эффективный отвод дыма и снижение риска обратной тяги.
+                        </p>
+                    </div>
+                    <div class="">
+                        <p>
+                            <img src="../img/bania/sauna-outside.webp" loading="lazy" alt="Баня из которой идет дым, вид снаружи. На переднем плане топор воткнутый в бревно."
+                            srcset="../img/bania/sauna-outside-small.webp 2400w" 
+                            sizes="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="works-flow-section">
+                <div class="double-side-section">
+                    <div class="">
+                        <h3>Безопасность установки.</h3>
+                        <p>
+                            Особое внимание уделяется безопасности установки металлической печи. Все металлические элементы тщательно изолируются и размещаются таким образом, чтобы избежать контакта с деревянными частями бани, предотвращая риск возгорания.
+                        </p>
+                    </div>
+                    <div class="">
+                        <p>
+                            <img src="../img/bania/sauna-pipe.jpg" loading="lazy" alt="Каменка для печи в бане. Из каменки выходит металлическая труба для отвода дыма. Вокруг все изолировано кирпичом для бани."
+                            srcset="../img/bania/sauna-pipe-small.jpg 2400w" 
+                            sizes="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article>
+            <div class="inner-article-div">
+                <h2>Постройка парилки для бани или сауны.</h2>
+                <p class="center-text">Создание бани – это комплексный процесс, требующий внимания к каждому этапу сборки от фундамента до крыши. Вот как проходит строительство:</p>
+            </div>
+            <section class="works-flow-section">
+                    
+                <div class="double-side-section">
+                    <div class="">
+                        <h3>Подготовка основания и фундамент для сауны или бани.</h3>
+                        <p>
+                            Для начала на глубине одного метра закапывается емкость без дна, заполненная щебенкой. Эта конструкция служит резервуаром для сбора и естественного поглощения воды из парилки и предбанника, что обеспечивает удобство и экологичность использования.
+                        </p>
+                        <p>
+                            Как основу для фундамента используется каменная кладка – кубический метр крупных камней, связанных между собой бетоном. Это обеспечивает прочность и долговечность всей конструкции.
+                        </p>
+                    </div>
+                    <div class="">
+                        <p>
+                            <img src="../img/bania/stone-base.webp" loading="lazy" alt="Каменный фундамент."
+                            srcset="../img/bania/stone-base-small.webp 2400w" 
+                            sizes="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="works-flow-section">
+                <div class="double-side-section">
+                    <div class="">
+                        <h3>Заливка пола и возведение стен для сауны</h3>
+                        <p>
+                            Пол в помещениях бани заливается с учетом их функционального назначения. В помывочной предусмотрена высота в 20 сантиметров, в парилке – двухуровневый пол с интегрированными сливами для воды и металлическими креплениями для установки несущих конструкций.
+                        </p>
+                        <p>
+                            Стены возводятся из бруса сосны, используются размеры 100x60 мм и 100x100 мм. Парилка дополнительно утепляется минеральной ватой и оборудуется пароизоляционной бумагой, специально разработанной для использования в банях.
+                        </p>
+                    </div>
+                    <div class="">
+                        <p>
+                            <img src="../img/bania/name-of-sauna.webp" loading="lazy" alt=""
+                            srcset="../img/bania/name-of-sauna-small.webp 2400w" 
+                            sizes="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="works-flow-section">
+                <div class="double-side-section">
+                    <div class="">
+                        <h3>Безопасность и внутренняя отделка бани.</h3>
+                        <p>
+                            В местах, предназначенных для контакта с дымоходом и металлическими элементами, стены выполняются из кирпича, чтобы обеспечить дополнительную огнеупорность и безопасность.                        
+                        </p>
+                        <p>
+                            Внутренняя часть бани обшивается лиственной вагонкой, создавая эстетически приятное и теплое пространство. Все внутренние элементы, включая полки и ступеньки, изготавливаются из лиственницы, обеспечивая долговечность и натуральный внешний вид.
+                        </p>
+                    </div>
+                    <div class="">
+                        <p>
+                            <img src="../img/bania/inside-sauna-2.webp" loading="lazy" alt="Помещение сауны с открытыми окнами и металлической трубой."
+                            srcset="../img/bania/inside-sauna-2-small.webp 2400w" 
+                            sizes="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </article>
+    <footer>    
+        <div class="footer-block">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../logo/papa_white.svg" alt="">
+                </a>
+            </div>
+            <div class="other-pages">
+                <ul class="pages">
+                    <li>
+                        <a href="/">Главная страница</a>
+                    </li>
+                    <li>
+                        <a href="/veranda-terrasa/">Постройка Веранды</a>
+                    </li>
+                    <li>
+                        <a href="/metallicheskaya-konstrukciya/">Металлический Навес</a>
+                    </li>
+                    <li>
+                        <a href="/stroitelstvo-bani/">Русская Баня</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy/">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul class="footel-social-list">
+                    <li>
+                        <a href="https://t.me/papabuild" aria-label="контакт со мной через телеграм приложение">
+                            <img class="footer-icon" src="../social-icons/telegram.svg" alt="логотип telegram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=37122112948" aria-label="контакт со мной через whatsapp приложение">
+                            <img class="footer-icon" src="../social-icons/whatsap.svg" alt="логотип whatsapp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Papabuild. Riga, Latvia.</p>
+    </footer>
+    <!-- <script defer type="module" src="./cookie.js" ></script> -->
+</body>
+</html>
