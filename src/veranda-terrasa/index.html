@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Строительство надежных и прочных летних террас, навесов и беседок из дерева.</title>
+    <meta name="description" content="Услуга по постройке из дерева надежных веранд, летних беседок, конструкций и террас. Прочные деревянные конструкции на заказ.">
+    <style>
+        
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            font-family:  sans-serif;
+        }
+        :root{
+            --index: calc(1vw + 1vh);
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+            margin: 40px 50px;
+        }
+        p{
+            font-size: calc(var(--index)*0.9);
+            margin-bottom: 30px;
+        }
+        .block{
+            grid-template-columns: 1fr 48vw;
+            display: grid;
+            justify-content: end;
+            gap: 3vw;
+        }
+        .block-text{
+            margin-left: calc(var(--index)*8)
+        }
+        .image img{
+            width:auto;
+            height: auto;
+        }
+        
+.head-block{
+    padding: 5px 30px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #FFF; 
+    transition: 0.3s; 
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.head-block.smaller {
+    padding: 0px 20px;
+    height: 60px; 
+}
+
+.header__log img{
+    height: 40px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.center-text{
+    margin: 6vh calc(var(--index)*16);
+    text-align: center;
+}
+
+
+.social-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-images{
+    display: block;
+}
+
+
+h2{
+    font-size: calc(var(--index)*1.2);
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.subhidding{
+    text-align: left;
+}
+
+.two-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    padding: 3vh 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: center;
+    gap: 3vw;
+}
+.on-of-side{
+    padding: 1vh 2vw;
+}
+ol,ul{
+    margin: 0 auto;
+}
+.right-side{
+    border: 1px solid lightgray;
+}
+li {
+    font-size: calc(var(--index)*0.9);
+    font-weight: 400;
+    counter-increment: custom-counter; 
+    position: relative; 
+    text-align: left;
+    margin: 0 0 1vh;
+}
+.second-section{
+    background-color: rgb(253, 244, 230);
+}
+span.price{
+    font-size: calc(var(--index)*1.4);
+    font-weight: 900;
+}
+footer{
+    background-color: black;
+}
+.copyright{
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: calc(var(--index)*0.6);
+}
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    
+    padding: 5vh 20px;
+}
+.footer-logo img{
+    height: 7vh;
+    width: auto;
+}
+.footer-social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon{
+    height: 5vh;
+    width: auto;
+}
+.footel-social-list li{
+    list-style-type: none;
+}
+.pages li{
+    list-style-type: none;
+}
+.pages a{
+    font-size: calc(var(--index)*0.8);
+    color: white;
+}
+.images-in-row{
+    width: 100%;
+    grid-template-columns: repeat(4, 24.9%);
+    display: grid;
+}
+.images-in-row image{
+    width: 10%;
+}
+.section-background{
+    background-color: rgb(255, 242, 226);
+}
+.blog-step-header{
+    margin: 6vh calc(var(--index)*8);
+    text-align: center;
+}
+h3{
+    font-size: calc(var(--index)*1.5);
+    margin-bottom: 2vh;
+}
+
+.number{
+    display: inline-block;
+    padding: calc(var(--index)*0.3) calc(var(--index)*1.3);
+    font-size: calc(var(--index)*3.2);
+    border: 2px solid greenyellow;
+}
+
+.double-side-section{
+    margin: 6vh calc(var(--index)*8) 0;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 3vw;
+}
+
+.full-width{
+    width: 100%;
+    height: auto;
+}
+
+
+
+h4{
+    font-size: calc(var(--index)*0.8);
+    margin-bottom: 2vh;
+}
+
+span.stronger{
+    font-weight: 600;
+}
+
+.video{
+    margin: 0 auto;
+    width: calc(var(--index)*30);
+    height: calc(var(--index)*10);
+}
+        @media screen and (max-width: 1480px){
+            p{
+                font-size: calc(var(--index)*1.1);
+            }
+            li {
+                font-size: calc(var(--index)*1.1);
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .two-side-section{
+                margin: 6vh calc(var(--index)* 2) 0;
+            }
+            .blog-step-header{
+                margin: 6vh calc(var(--index)*6);
+            }
+            .double-side-section{
+                margin: 6vh calc(var(--index)* 2) 0;
+            }
+            
+            .social-icon{
+                width: 20px;
+            }
+            .center-text{
+                margin: 6vh calc(var(--index)* 10);
+            }
+            .block-text{
+                margin-left: calc(var(--index)* 2);
+            }
+        }
+        @media screen and (max-width: 1000px){
+            h1{
+            font-size: calc(var(--index)*2.6);
+            }    
+            p{
+                font-size: calc(var(--index)*1.6);
+            }
+            
+            .video{
+                margin: 0 auto;
+                width: 100%;
+                height: 30vh;
+            }
+            .center-text{
+                margin: 6vh calc(var(--index)* 2);
+                text-align: left;
+            }
+            .block-text{
+                margin-left: 10px;
+            }
+            .block{
+                grid-template-columns: 1fr;
+            }
+            .two-side-section{
+                grid-template-columns: 1fr;
+            }
+            .blog-step-header{
+                margin: 6vh calc(var(--index)*2);
+            }
+            .double-side-section{
+                margin: 6vh calc(var(--index)*2);
+                grid-template-columns: 1fr;
+            }
+            .images-in-row{
+                grid-template-columns: repeat(2, 49.9%);
+            }
+            .images-in-rowp{
+                margin: 0;
+            }
+            .two-side-section{
+                margin: 6vh calc(var(--index)*2);
+            }
+            
+            h2, h3, h4{
+                font-size: calc(var(--index)*2);
+            }
+            li {
+                font-size: calc(var(--index)*1.6);
+                font-weight: 400;
+                counter-increment: custom-counter; 
+                position: relative; 
+                text-align: left;
+                margin: 0 0 1vh;
+            }
+
+            .right-side{
+                border: none;
+            }
+            .social-icon{
+                width: 30px;
+            }
+            .footer-block{
+                flex-direction: column;
+                gap: 70px;
+            }
+            .footel-social-list {
+                
+            }
+            .pages a{
+                font-size: calc(var(--index)*1.8);
+                color: white;
+            }
+            .image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .inner-article-div{
+            padding-top: 20px;
+            background-color: rgb(255, 243, 220);
+        }
+    </style>
+
+</head>
+<body>
+    <header class="head-block">
+        <div class="header__links">
+            <div class="header__log">
+                <a href="../index.html">
+                    <img src="../logo/papa_black.svg" alt="Логитип сайта papabuild.com">
+                </a>
+            </div>
+            <div class="social-nav">
+                    <h5>контакты:</h5>
+                    <nav>
+                        <a class="https://t.me/papabuild" href="#" aria-label="контакт со мной через телеграм приложение"> 
+                            <img class="social-icon" src="../social-icons/telegram-black.svg" alt="логотип telegram">
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=37122112948" aria-label="контакт со мной через whatsapp приложение">
+                            <img class="social-icon" src="../social-icons/whatsap-black.svg" alt="логотип whatsapp">
+                        </a>
+                    </nav>
+            </div>
+        </div>
+        <div></div>
+    </header>
+    <article>
+        <h1>Строительные работы. <br>Постройка летней беседки 
+            из дерева.</h1>
+        <div class="block">
+            <div class="block-text">
+                <p>В течение многих лет, работая строителем, я имел удовольствие реализовывать самые разнообразные проекты летних беседок. <br> От двухэтажных конструкций до узких и длинных веранд, примыкающих к дому или стоящих отдельно, каждый проект требовал индивидуального подхода и тщательного планирования.</p>
+                <p><strong>Пример того, как я оказываю услуги по строительству летней беседки из дерева и бетона</strong> – проекта, который совмещает в себе красоту натуральных материалов и надежность конструкции.</p>
+            </div>
+            <div class="image">
+                <p>
+                    <img src="../img/veranda/gazepo.webp" alt="Летняя беседка из дерева."
+                    srcset="../img/veranda/gazepo_smallest.webp 741w, ../img/veranda/gazepo_small.webp 2000w" 
+                    sizes="">
+                </p>
+            </div>
+        </div>
+        <article class="inner-artcile second-section">
+            <div class="two-side-section">
+                <div class="left-side on-of-side">
+                    <h2>
+                        Этапы строительства летней беседки.
+                    </h2>
+                    <p>Чтобы оказать услугу наиболее эффективно, я составил список основных этапов строительных работ. Этот список поможет вам рассчитать не только примерное время, необходимое на реализацию проекта, но и предварительные усилия.</p>
+                    <p>Важно понимать, что фактически затраченное время может отличаться от первоначальных расчетов, однако ориентировочное планирование – ключ к успешному выполнению задачи.</p>
+                </div>
+                <div class="right-side on-of-side">
+                    <section>
+                            <ol>
+                                <li><strong>Встреча с заказчиком - клиентом, обсуждение услуг, проекта и цен.</strong></li>
+                                <li>Рассчет проекта и создание чертежа.</li>
+                                <li>Подготовка площадки.</li>
+                                <li>Разметка высотных отметок, основания фундамента.</li>
+                                <li>Возведение каркаса строения.</li>
+                                <li>Монтаж перил, возведение стен.</li>
+                                <li>Укладка террасной доски.</li>
+                                <li>Настил крыши.</li>
+                                <li>Последние штрихи.</li>
+                            </ol>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <section class="image-row">
+            <div class="images-in-row">
+                <p>
+                    <img src="../img/veranda/flowers_big.webp" loading="lazy" alt="Цветы на деревянных перилах."
+                    srcset="../img/veranda/flowers_small.webp 2400w" 
+                    sizes="">
+                </p>
+                <p>
+                    <img src="../img/veranda/wood_mat_big.webp" loading="lazy" alt="Деревянный квадратный брус для строительства."
+                    srcset="../img/veranda/wood_mat_small.webp 2400w" 
+                    sizes="">
+                </p>
+                <p>
+                    <img src="../img/veranda/cofee_big.webp" loading="lazy" alt="Чашка капучино на деревянном столе."
+                    srcset="../img/veranda/cofee_small.webp 2400w" 
+                    sizes="">
+                </p>
+                <p>
+                    <img src="../img/veranda/color_wood_big.webp" loading="lazy" alt="Деревянные доски разных цветов."
+                    srcset="../img/veranda/color_wood_small.webp 2400w" 
+                    sizes="">
+                </p>
+
+            </div>
+        </section>
+        <article>
+            <div class="two-side-section">
+                <div class="left-side on-of-side">
+                    <h2>
+                        Список необходимых материалов, чтобы заказать летнюю беседку.
+                    </h2>
+                    <p>
+                        В основу каждого строительного проекта ложится список материалов, необходимых для его реализации.
+                    </p>
+                    <p>Я изложил примерный список материалов который необходим для постройки каждой беседки. Конечно в зависимости от сложности конструкции, её величины и геометрии, список может и должен быть увеличен.</p>
+                    <p>Примерная цена за все эти материалы на момент 2024 года составляет<span class="price"> 3500 €</span>. <br>Конечно все зависит от рыночных условий.</p>
+                </div>
+                <div class="right-side on-of-side">
+                    <section>
+                            <ul>
+                                <li>Брус 100 x 100 миллиметро, 3 метровый, 8 штук.</li>
+                                <li>Брус 100 x 60 миллиметро, 6 метровый, 5 штук.</li>
+                                <li>Брус 100 x 60 миллиметро, 3 метровый, 7 штук.</li>
+                                <li>Брус 100 x 60 миллиметро, 3 метровый, 7 штук.</li>
+                                <li>Брус 100 x 60 миллиметро, 3 метровый, 7 штук.</li>
+                                <li>Бетон 1,5 куба. Около 55 - 57 мешков по 40кг.</li>
+                                <li>Шпильки м20 + шайбы.</li>
+                                <li>Шпильки м16 + шайбы.</li>
+                                <li>Шурупы разных размеров и разной длинны (надо докупать и присматривато по мере строительства) около 2000.</li>
+                                <li>Тонировка - цвет орех 7 литров.</li>
+                                <li>Тонировка - цвет палисандр 7 литров.</li>
+                                <li>Тонировка - цвет дуб 7 литров.</li>
+                                <li>Оконные утеплители для предотвращения и остановки влаги - 20 квадратов.</li>
+                                <li>Строительная пена - 8 балонов.</li>
+                                <li>Декоротивная рейка на стены 28x35 - 250 метров.</li>
+                            </ul>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <section class="works-flow-section section-background">
+
+            <div class="double-side-section">
+                <div class="">
+                    <h3>Первый этап строительного процесса:<br>Подробное планирование.</h3>
+                    <p>
+                        Перед началом любого строительного проекта я всегда придерживаюсь чёткого плана действий, который начинается с тщательного планирования и подготовки.
+                    </p>
+                    <p>
+                        <span class="stronger">1. Определение потребностей заказчика:</span> Личное общение с клиентом помогает мне понять его желания и ожидания от проекта, будь то строительство летней веранды или любая другая конструкция.<br><br>
+                        <span class="stronger">2. Оценка существующих условий:</span> Визит на место предстоящего строительства необходим для оценки исходной ситуации и возможных ограничений.<br><br>
+                        <span class="stronger">3. Разработка проекта:</span> Размеры будущей конструкции, выбор материалов, и детализацию всех конструктивных элементов, как, например, добавление кладовой на втором этаже веранды.<br><br>
+                        <span class="stronger">4. Бюджетирование и планирование сроков.</span>
+                    </p>
+                    <p>
+                        Этот подход обеспечивает чёткое понимание всех аспектов предстоящего проекта, позволяет эффективно решать технические задачи и гарантирует высокое качество выполнения работ.
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        <img src="../img/veranda/plan_big.webp" loading="lazy" alt="Карандаш лежит на плане строительных работ."
+                        srcset="../img/veranda/plan_small.webp 2400w" 
+                        sizes="">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="works-flow-section">
+            <div class="double-side-section">
+                <div class="">
+                    <h3>Второй этап строительства:<br>Демонтаж и подготовка площадки.</h3>
+                    <p>
+                        Следующим шагом является демонтаж существующих конструкций и подготовка площадки к новому строительству.
+                    </p>
+                    <p>
+                        <span class="stronger">Оценка состояния существующих материалов:</span> Прежде чем приступить к демонтажу, я провожу детальный осмотр материалов предыдущей постройки. <br>Цель – определить, какие из них могут быть повторно использованы. <strong>Это не только экономит ресурсы и средства, но и способствует экологичности процесса.</strong><br><br>
+                        <span class="stronger">Подготовка и выравнивание поверхности:</span> После удаления старых конструкций важно тщательно подготовить и выровнять поверхность под новое строительство. Это включает удаление мусора, выравнивание земли и, при необходимости, уплотнение почвы для обеспечения стабильного и надёжного основания.<br><br>
+                        <span class="stronger">Подготовка к заливке бетона:</span> Если планируется использование бетонного фундамента, следующим шагом будет подготовка опалубки и армирование. Особое внимание уделяется качеству и ровности основания, чтобы избежать будущих деформаций конструкции.
+                    </p>
+                    <p>
+                        Этот этап критичен для обеспечения долговечности и надёжности всей будущей конструкции. Тщательная подготовка площадки и ответственное отношение к ресурсам лежат в основе моего профессионального подхода к строительству.
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        <img src="../img/veranda/wood_big.webp" loading="lazy" alt="Старые деревянные доски."
+                        srcset="../img/veranda/wood_small.webp 2000w" 
+                        sizes="">
+                    </p>
+                    <p>
+                        <img src="../img/veranda/old_veranda_sparrow_big.webp" loading="lazy" alt="Воробей с красной головой сидит на старой деревянной конструкции. "
+                        srcset="../img/veranda/old_veranda_sparrow_small.webp 2000w" 
+                        sizes="">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="works-flow-section section-background">
+            <header class="blog-step-header">
+                <h3>Заливка фундамента для будущей беседки.</h3>
+            </header>
+            <div class="double-side-section">
+                <div class="">
+                    <p>
+                        <span class="stronger">Закладка фундамента – ключевой этап строительства,</span> от правильности выполнения которого зависит долговечность и надёжность всей конструкции. В зависимости от типа почвы и планируемой нагрузки на будущую постройку, выбирается метод заливки фундамента. Вот основные шаги, которые я применяю на этом этапе:
+                    </p>
+                            <p><span class="stronger">1. Геодезические работы:</span> С использованием нивелира проводится точная разметка уровня фундамента.<br><br>
+                            <span class="stronger">2. Выбор типа фундамента:</span> Основываясь на характеристиках почвы, определяется, будет ли заливаться монолитный фундамент или достаточно будет установки цементных блоков.<br><br>
+                            <span class="stronger">3. Подготовка материалов:</span> Закупается необходимое количество бетона. Возможность использования готового бетонного раствора с доставкой на объект рассматривается в первую очередь. Если это невозможно, производится закупка сухих смесей для самостоятельного приготовления раствора.<br><br>
+                            <span class="stronger">4. Бетон заливается в подготовленную опалубку. </span><br><br>
+                            <span class="stronger">5. В несколько определенных блоков перед высыханием устанавливаются штыри</span> - шпильки на которые предварительно навариаваются металические “пятки”, на которые будут установлены направляюшие деревянной конструкции.<br><br>
+                            <span class="stronger">6. Выдержка и сушка:</span> Время высыхания бетона может варьироваться от одной до двух недель в зависимости от погодных условий и типа используемого раствора. В этот период крайне важно обеспечить защиту фундамента от осадков и прямых солнечных лучей, что поможет избежать трещин и других дефектов.
+                        </p>
+                    
+                    <p>
+                        Таким образом, заливка фундамента требует не только профессиональных знаний и навыков, но и внимательного отношения к деталям на каждом этапе работы.
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        <img src="../img/veranda/foundation_big.webp" loading="lazy" alt="Бетонные основания квадратной формы."
+                        srcset="../img/veranda/foundation_small.webp 2400w" 
+                        sizes="">
+                    </p>
+                    <p>
+                        <img src="../img/veranda/base_wood_big.webp" loading="lazy" alt="Деревянное основание летней беседки."
+                        srcset="../img/veranda/base_wood_small.webp 2400w" 
+                        sizes="">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <header class="blog-step-header">
+                <h3>Возведение каркаса и обработка элементов<br> беседки или террасы.</h3>
+            </header>
+            <p>
+                <img class="full-width" src="../img/veranda/veranda_scelet_big.webp" loading="lazy" alt="Каркас деревянной летней веранды на природе."
+                    srcset="../img/veranda/veranda_scelet_small.webp 2400w" 
+                    sizes="">
+            </p>
+            <div class="double-side-section">
+                <div class="">
+                    <p>
+                        После успешной заливки фундамента следующим важным этапом является установка направляющих и несущих конструкций беседки, которая полностью выполнена из дерева. Вот как я подхожу к этому:
+                    </p>
+                    <p>
+                        <span class="stronger">Обработка деревянных элементов:</span> Несмотря на то что деревянные детали часто поставляются уже обработанными, я провожу дополнительную обработку антисептиками и защитными составами. <br><br>
+                        <span class="stronger">Укладка абразивного материала</span> В местах контакта деревянных элементов с бетонным основанием обязательно прокладывается абразивный материал, например, рубероид. Это предотвращает прямой контакт дерева с влагой и увеличивает срок службы конструкции.<br><br>
+                        <span class="stronger">Выставление каркаса:</span> Устанавливаются направляющие и несущие столбы. Это скелет будущей беседки, который определяет её форму, размеры и общую прочность.
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        <span class="stronger">Монтаж на болтовые соединения:</span> Все элементы каркаса фиксируются между собой с использованием болтовых соединений, обеспечивая высокую прочность и надёжность всей конструкции.<br><br>
+                        <span class="stronger">Утепление:</span> Для защиты от влаги применяется утепление пинопластом и монтажной пеной, особенно в зонах, наиболее подверженных проникновению влаги.<br><br>
+                        <span class="stronger">Вентиляция:</span> Между деревянными элементами и бетонными блоками обязательно оставляется пространство для воздухообмена. Это способствует отводу влаги и предотвращает её конденсацию внутри конструкции.
+                    </p>
+                    <p>
+                        Правильно собранный каркас и качественная обработка дерева гарантируют долговечность и устойчивость беседки к внешним воздействиям.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="works-flow-section section-background">
+            <div class="double-side-section">
+                <div class="">
+                    <h3>Пятый этап строительства:<br>Монтаж облицовочных материалов строения и отделка.</h3>
+                    <p>
+                        После возведения каркаса и его тщательной подготовки наступает этап крепления облицовочных материалов, который требует особой аккуратности и внимания к деталям.
+                    </p>
+                            <p><span class="stronger">Обработка и покраска дерева:</span> Перед монтажом все деревянные элементы обрабатываются защитными смазками, что обеспечивает их дополнительную защиту от влаги и гниения. После этого элементы покрываются минимум двумя слоями краски, что не только улучшает их внешний вид, но и способствует долговечности.<br><br>
+                                <span class="stronger">Сборка перил:</span> Одним из наиболее трудоёмких моментов на этом этапе является сборка перил с сетчатым узором, выполняемая в несколько этапов. <br><br>
+                                <span class="stronger">Установка лестниц и поручней:</span> В зависимости от проекта и предпочтений заказчика могут быть улучшены или модифицированы лестницы<br><br>
+                                <span class="stronger">Отделка стен:</span> На этом этапе определяется, какие стены будут зашиты полностью, а какие останутся открытыми. Это зависит от функциональных особенностей беседки и пожеланий заказчика. Полное зашивание стен способствует большей защите от погодных условий, в то время как открытые стены обеспечивают лучшую вентиляцию и естественное освещение.
+                        </p>
+                    
+                    <p>
+                        Этот этап строительства играет ключевую роль в формировании внешнего вида и функциональности беседки. Тщательная обработка, качественная покраска и аккуратный монтаж облицовочных материалов - залог качества!
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        <img src="../img/veranda/veranda_railing_big.webp" loading="lazy" alt=""
+                        srcset="../img/veranda/veranda_railing_small.webp 2400w" 
+                        sizes="">
+                    </p>
+                    <p>
+                        <img src="../img/veranda/colorise_big.webp" loading="lazy" alt="Покраска деревянных элементов в темный цвет."
+                        srcset="../img/veranda/colorise_small.webp 2400w" 
+                        sizes="">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="works-flow-section">
+            <header class="blog-step-header">
+                <h3>Шестой этап строительства:<br>Возведение крыши и укладка пола.</h3>
+            </header>
+            <p class="center-text">
+                На шестом, финальном этапе строительства беседки внимание уделяется возведению крыши и укладке пола, что является заключительным этапом в создании основных конструктивных элементов.
+            </p>
+            <div class="double-side-section">
+                    <section>
+                        <p>
+                            <img src="../img/veranda/metal_roof_big.webp" loading="lazy" alt="Металлические листы для крыши."
+                            srcset="../img/veranda/metal_roof_small.webp 2400w" 
+                            sizes="">
+                        </p>
+                        <p>
+                            <h4>Возведение крыши:</h4>
+                            <p>
+                            <span class="stronger">Установка стропил:</span> Для начала монтируются деревянные стропила, которые служат основой для кровельного покрытия. Они должны быть установлены с учетом необходимого уклона для эффективного стока дождевой воды. <br><br>
+                            <span class="stronger">Монтаж металлических листов:</span> В качестве кровельного материала часто используются металлические листы, благодаря их долговечности и устойчивости к атмосферным воздействиям. Листы крепятся к стропилам с использованием специальных болтов с уплотнительными шайбами, что предотвращает проникновение воды.
+                            </p>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            <img src="../img/veranda/floor_big.webp" loading="lazy" alt="Террасная доска перед входом в дом."
+                            srcset="../img/veranda/floor_small.webp 2400w" 
+                            sizes="">
+                        </p>
+                        <p>
+                            <h4>Укладка пола:</h4>
+                            <p>
+                            <span class="stronger">Подготовка основания:</span> Перед укладкой террасной доски необходимо убедиться, что основание пола ровное и надежно подготовлено.<br><br>
+                            <span class="stronger">Монтаж террасной доски:</span> Террасная доска выбирается в качестве покрытия пола за её прочность, долговечность и эстетичный внешний вид. Доски крепятся к лагам, обеспечивая вентиляцию под полом и предотвращая скопление влаги.<br><br>
+                            <span class="stronger">Обработка и защита:</span> После укладки доски обрабатываются специальными защитными средствами от гниения и воздействия влаги, что продлевает срок службы пола и сохраняет его первоначальный вид.
+                            </p>
+                        </p>
+                    </section>
+            </div>
+            <p class="center-text">
+                Этот этап завершает основные работы по созданию каркаса и внешних элементов беседки, подготавливая конструкцию к финальным отделочным работам. <br>Качественное выполнение работ по возведению крыши и укладке пола гарантирует долговечность и функциональность беседки, обеспечивая комфорт и уют для её использования.
+            </p>
+        </section>
+    </article>
+    <footer>    
+        <div class="footer-block">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../logo/papa_white.svg" alt="">
+                </a>
+            </div>
+            <div class="other-pages">
+                <ul class="pages">
+                    <li>
+                        <a href="/">Главная страница</a>
+                    </li>
+                    <li>
+                        <a href="/veranda-terrasa/">Постройка Веранды</a>
+                    </li>
+                    <li>
+                        <a href="/metallicheskaya-konstrukciya/">Металлический Навес</a>
+                    </li>
+                    <li>
+                        <a href="/stroitelstvo-bani/">Русская Баня</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy/">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul class="footel-social-list">
+                    <li>
+                        <a href="https://t.me/papabuild" aria-label="контакт со мной через телеграм приложение">
+                            <img class="footer-icon" src="../social-icons/telegram.svg" alt="логотип telegram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=37122112948" aria-label="контакт со мной через whatsapp приложение">
+                            <img class="footer-icon" src="../social-icons/whatsap.svg" alt="логотип whatsapp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Papabuild. Riga, Latvia.</p>
+    </footer>
+    <!-- <script defer type="module" src="./cookie.js" ></script> -->
+</body>
+</html>

@@ -1,6 +1,12 @@
-import glsl from 'vite-plugin-glsl'
+import {resolve} from 'path'
+import {defineConfig} from 'vite'
 
-export default {
+import glsl from 'vite-plugin-glsl';
+
+const src = resolve(__dirname, 'src')
+
+
+export default defineConfig({
     root: 'src/',
     publicDir: '../static/',
     base: './',
@@ -16,16 +22,13 @@ export default {
         sourcemap: true, // Add sourcemap
         rollupOptions: {
             input: {
-                main: 'index.html',
-                metal: 'metallicheskaya-konstrukciya.html',
-                bania: 'sroitelstvo-bani.html',
-                veranda: 'veranda-terrasa.html',
-                privacy: 'privacy-policy.html',
-            }
+              main: resolve(src, 'index.html'),
+              metal: resolve(src, 'metallicheskaya-konstrukciya/index.html'),
+        }
         }
     },
     plugins: 
     [
         glsl()
     ]
-}
+});
