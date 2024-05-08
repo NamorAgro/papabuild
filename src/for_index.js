@@ -38,4 +38,3 @@ function handleSize(){
 
 
 window.addEventListener('resize', handleSize);
-handleSize()
