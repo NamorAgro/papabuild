@@ -23,13 +23,15 @@ articlesTitle.forEach((title) => {
 });
 
 var desktopText = document.querySelector('.project-main-text');
+var mainDesktopText = document.querySelector('.wrapper__hello-text');
 function handleSize(){
     if (window.innerWidth < 740){
         desktopText.style.display = 'none'
-        
+        mainDesktopText.style.display = 'none'
     }
     else{
         desktopText.style.display = 'block'
+        mainDesktopText.style.display = 'block'
 
     }
 }
