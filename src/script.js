@@ -5,7 +5,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import fireFliesVertex from './shaders/fireflise/vertex.glsl'
 import fireFliesFragment from './shaders/fireflise/fragment.glsl'
 
-console.log(fireFliesVertex)
+
 /**
  * Base
  */
